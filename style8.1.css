@@ -1,0 +1,116 @@
+    :root {
+      --blue: #1565d8;
+      --dark: #12213f;
+      --text: #1b2a49;
+      --muted: #6b7a99;
+      --bg: #e9f3fd;
+      --white: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    header { background: var(--white); box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      height: 64px;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; }
+    .logo span {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: #e3effc; display: grid; place-items: center; font-size: 14px;
+    }
+    .search { display: flex; gap: 8px; flex: 1; max-width: 340px; }
+    .search input {
+      flex: 1; height: 38px; padding: 0 14px;
+      border: 1px solid #dbe3ef; border-radius: 20px;
+      font-family: inherit; font-size: 13px; outline: none;
+    }
+    .search button {
+      height: 38px; padding: 0 22px; border: none; border-radius: 20px;
+      background: var(--blue); color: var(--white);
+      font-family: inherit; font-weight: 500; cursor: pointer;
+    }
+    .links { display: flex; gap: 18px; font-size: 13px; font-weight: 500; }
+    .links a { color: var(--blue); text-decoration: none; }
+
+    main { padding: 28px 0 40px; }
+
+    .card {
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(20,50,100,.08);
+    }
+
+    .label {
+      color: var(--blue);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h2 { font-size: 20px; font-weight: 400; margin: 6px 0 16px; }
+
+    .current { position: relative; padding: 28px 28px 24px; margin-bottom: 40px; }
+    .updated {
+      position: absolute; top: -10px; right: 12px;
+      background: var(--blue); color: var(--white);
+      font-size: 11px; padding: 6px 14px; border-radius: 14px;
+    }
+    .current-top { display: flex; justify-content: space-between; align-items: flex-start; }
+    .city { font-size: 26px; font-weight: 400; margin: 6px 0 4px; }
+    .date { font-size: 11px; color: var(--muted); }
+    .big-icon { font-size: 34px; }
+    .current-bottom {
+      display: flex; justify-content: space-between; align-items: center;
+      border-top: 1px solid #edf1f7; margin-top: 18px; padding-top: 18px;
+    }
+    .temp { font-size: 64px; font-weight: 700; line-height: 1; }
+    .temp sup { font-size: 18px; font-weight: 500; }
+    .cond { text-align: right; }
+    .cond strong { display: block; font-size: 18px; font-weight: 400; }
+    .cond small { font-size: 11px; color: var(--muted); }
+
+    .details { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 40px; }
+    .detail { padding: 20px; font-size: 11px; color: var(--muted); }
+    .detail .ico { font-size: 16px; display: block; margin-bottom: 16px; }
+    .detail b { display: block; margin-top: 6px; font-size: 12px; font-weight: 400; color: var(--text); }
+
+    .hours { display: grid; grid-template-columns: repeat(4, 1fr); padding: 6px; margin-bottom: 40px; }
+    .hour { text-align: center; padding: 14px 0; font-size: 11px; border-radius: 8px; }
+    .hour .ico { display: block; margin: 12px 0; font-size: 16px; }
+    .hour b { font-size: 13px; font-weight: 700; }
+    .hour.active { background: var(--blue); color: var(--white); } /* ساعة "Now" المميزة */
+
+    .days { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+    .day { text-align: center; padding: 18px 0 20px; font-size: 13px; }
+    .day .ico { display: block; margin: 16px 0; font-size: 22px; }
+    .day small { font-size: 10px; color: var(--muted); }
+
+    footer { background: var(--dark); color: #aab6cf; font-size: 10px; }
+    .foot {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      padding: 26px 0 30px;
+    }
+    .foot b { display: block; color: var(--white); font-size: 11px; margin-bottom: 8px; }
+
+    @media (max-width: 700px) {
+      .details { grid-template-columns: 1fr; }
+      .days { grid-template-columns: repeat(2, 1fr); }
+      .links { display: none; }
+      .foot { flex-direction: column; align-items: flex-start; gap: 10px; }
+    }

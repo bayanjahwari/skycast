@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skycast</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style8.1.css">  
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <div class="logo"><span>✳</span> Skycast</div>
+      <div class="search">
+        <input type="text" placeholder="Search for a city...">
+        <button>Search</button>
+      </div>
+      <nav class="links">
+        <a href="#">Today</a>
+        <a href="#">Forecast</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="card current">
+      <div class="updated">Updated 10:30</div>
+      <div class="current-top">
+        <div>
+          <div class="label">Current weather</div>
+          <h1 class="city">London, UK</h1>
+          <div class="date">Monday, 16 September</div>
+        </div>
+        <div class="big-icon">⛅</div>
+      </div>
+      <div class="current-bottom">
+        <div class="temp">18<sup>°c</sup></div>
+        <div class="cond">
+          <strong>Partly cloudy</strong>
+          <small>Feels like 17°C</small>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="label">Today</div>
+      <h2>Weather details</h2>
+      <div class="details">
+        <div class="card detail"><span class="ico">💧</span>Humidity<b>72%</b></div>
+        <div class="card detail"><span class="ico">💨</span>Wind<b>14 km/h</b></div>
+        <div class="card detail"><span class="ico">✳</span>Visibility<b>10 km</b></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="label">Forecast</div>
+      <h2>Next few hours</h2>
+      <div class="card hours">
+        <div class="hour active">Now<span class="ico">⛅</span><b>18°</b></div>
+        <div class="hour">12 PM<span class="ico">☁️</span><b>19°</b></div>
+        <div class="hour">2 PM<span class="ico">🌧️</span><b>18°</b></div>
+        <div class="hour">4 PM<span class="ico">🌤️</span><b>17°</b></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="label">This week</div>
+      <h2>5-day forecast</h2>
+      <div class="days">
+        <div class="card day">Tue<span class="ico">🌤️</span><small>19° / 12°</small></div>
+        <div class="card day">Wed<span class="ico">🌧️</span><small>16° / 10°</small></div>
+        <div class="card day">Thu<span class="ico">☁️</span><small>17° / 11°</small></div>
+        <div class="card day">Fri<span class="ico">☀️</span><small>21° / 13°</small></div>
+        <div class="card day">Sat<span class="ico">🌤️</span><small>20° / 12°</small></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div><b>Skycast</b>Simple weather for everyday planning.</div>
+      <div>Fictional data for a student project.</div>
+      <div>© 2025 Skycast</div>
+    </div>
+  </footer>
+
+</body>
+</html>
