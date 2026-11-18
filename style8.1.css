@@ -107,10 +107,3 @@
       padding: 26px 0 30px;
     }
     .foot b { display: block; color: var(--white); font-size: 11px; margin-bottom: 8px; }
-
-    @media (max-width: 700px) {
-      .details { grid-template-columns: 1fr; }
-      .days { grid-template-columns: repeat(2, 1fr); }
-      .links { display: none; }
-      .foot { flex-direction: column; align-items: flex-start; gap: 10px; }
-    }
